@@ -1,7 +1,7 @@
 services:
-  ft_environment:
+  env:
     build: .
-    container_name: ft_environment
+    container_name: env
     volumes:
       - .:/cursus
     working_dir: /cursus

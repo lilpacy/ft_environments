@@ -1,9 +1,10 @@
 services:
   env:
-    build: .
+    build:
+      context: .
+    platform: linux/amd64
     container_name: env
     volumes:
       - .:/cursus
     working_dir: /cursus
     tty: true
-
